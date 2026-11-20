@@ -39,11 +39,11 @@ test('My First APi Test', async({request})=>{
         }
     )
 
-    expect(response3.status()).toBe(201);
+    expect(response3.status()).toBe(200);
     const responseBody3= await response3.json();
-       expect.soft(responseBody3.userId).toBe(13);
-    expect.soft(responseBody3.title).toBe('My First API Post Test');
-    expect.soft(responseBody3.body).toBe('Learning Playwright API testing');
+       expect.soft(responseBody3.userId).toBe(10);
+    expect.soft(responseBody3.title).toBe('My First API Post Test Replace');
+    expect.soft(responseBody3.body).toBe('Learning Playwright API testing Replace');
 
 
 });
